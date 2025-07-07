@@ -1,29 +1,128 @@
-/* Nav Styles */
-.nav {
+/* Navbar container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #2c3e50;
-  padding: 10px 0;
+  padding: 12px 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.nav ul {
+/* Logo styling */
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none; /* Removes underline */
+}
+
+/* Centered nav links */
+.nav-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
-.nav ul li {
+.nav-items ul li {
   margin: 0 20px;
 }
 
-.nav ul li a {
+.nav-items ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 24px;
   transition: color 0.2s;
 }
 
-.nav ul li a:hover {
+.nav-items ul li a:hover {
   color: #f39c12;
+}
+
+/* Search bar styling */
+.searchbar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+  margin-left: 40px;
+  height: 32px;
+}
+
+.searchbar input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 24px;
+   width: 200px;
+}
+
+.button1, .button2 {
+  border: none;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 4px 12px;
+  margin-left: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 28px;
+  transition: background 0.2s;
+}
+
+.button1:hover, .button2:hover {
+  background-color: #f39c12;
+  color: #2c3e50;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 10px;
+  }
+  .nav-items ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-items ul li {
+    margin: 8px 0;
+  }
+  .searchbar {
+    margin: 16px 0 0 0;
+    width: 100%;
+  }}
+
+  /* Home page background */
+  .intro-section {
+  background-image: url('Photos/skyline2.jpg'); /* Use forward slash for paths */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px; /* Adjust height as needed */
+  width: 100%;
+  display: flex;      /* Optional: for centering content */
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-textbox {
+  background: rgba(44, 62, 80, 0.8); /* Semi-transparent dark background */
+  color: #fff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
