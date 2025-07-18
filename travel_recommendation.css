@@ -322,7 +322,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 600px;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;       
   padding-left: 20%; /* Optional: add spacing from the right edge */
