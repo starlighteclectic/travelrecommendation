@@ -310,7 +310,7 @@ nav {
 
 .contactus-page .nav-items ul {
   justify-content: flex-start; /* Align nav items to the left */
-  padding-right: 860px; /* Add padding to the right for spacing */
+  padding-right: 460px; /* Add padding to the right for spacing */
 }
 
 .contact-section {
