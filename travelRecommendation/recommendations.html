@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Starlight Travel Recommendations</title>
-    <link rel="stylesheet" href="travel_recommendation.css">
-    </head>
+  <meta charset="UTF-8" />
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
 <body>
-    <nav>
+   <nav>
     <a href="home.html" class="logo">
     Starlight Travel Recommendations
   </a>
@@ -23,7 +23,6 @@
         <button class="button2" onclick="document.getElementById('searchInput').value=''">Reset</button>
       </div>
     </nav>
-
     <section class="intro-section">
   <div class="intro-textbox">
     <h1>Welcome to Starlight Travel Recommendations</h1>
@@ -31,8 +30,10 @@
        From the shores of California to the mountains of the Iceland, there is much to explore around the world.</p>
     <p> <a href="aboutus.html" class="book-now-btn">Book Now</a></p>
       </div>
-
-</section>
-<script src="travel_recommendation.js"></script>
+  <section class="recommendations-section">
+    <h1>Recommendations</h1>
+    <div id="recommendations-list"></div>
+  </section>
+  <script src="recommendations.js"></script>
 </body>
 </html>
